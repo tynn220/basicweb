@@ -1,0 +1,107 @@
+body{
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+    min-height:89vh;
+    font-family: 'Brush Script MT', cursive;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100px;
+}
+.home-image {
+    display: block;
+    width: 100% !important;
+    height: 600px !important;
+}
+
+.single-article .article-container-inner {
+    background: #f0eded;
+    border: 1px solid #c9c7c7;
+
+}
+.single-article hr {
+    margin-top: 30px;
+    border: 0;
+    border-top: 1px solid #c9c7c7;
+    width:100%
+}
+.container-wrapper{
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+}
+.img{
+    width: 16em;
+    height: 330px;
+    border-radius: 20px;
+}
+/* card */
+.flip-card {
+    background-color: transparent;
+    width: 16em;
+    height: 330px;
+    perspective: 1000px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 20px;
+
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 20px;
+
+}
+
+.flip-card-back {
+    background-color: #726cf8;
+    background-image: linear-gradient(315deg, #726cf8 0%, #e975a8 74%);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    border: solid 2px black;
+    padding: 10px;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+}
+.m15{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.mt15{
+    margin-top: 80px;
+}
